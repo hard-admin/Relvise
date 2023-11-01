@@ -83,3 +83,10 @@ function shotMyDB(hidden) {
 	}
 }
 shotMyDB(personalMovieDB.privat);
+
+function writeYourGanres() {
+	for (let i = 1; i <= 3; i++) {
+		personalMovieDB.geners[i - 1] = prompt(`Ваш любимый жанр под номером ${i}`);
+	}
+}
+writeYourGanres();
