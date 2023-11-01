@@ -1,4 +1,22 @@
 'use scrict';
+/* let numberOfFilms = prompt('Сколько фильмов вы уже смотрели?');
+
+let personalMovieDB = {
+	count: numberOfFilms,
+	movies: {},
+	actors: {},
+	geners: [],
+	privat: false
+};
+const a = prompt('Один из последних просмотреных фильмов?', ''),
+	b = prompt('На сколько оцените его?', ''),
+	c = prompt('Один из последних просмотреных фильмов?', ''),
+	d = prompt('На сколько оцените его?', '');
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+
+ */
 
 let numberOfFilms;
 
@@ -59,5 +77,9 @@ function detectPersonalLevel() {
 }
 detectPersonalLevel();
 
-
-console.log(personalMovieDB);
+function shotMyDB(hidden) {
+	if (!hidden) {
+		console.log(personalMovieDB);
+	}
+}
+shotMyDB(personalMovieDB.privat);
